@@ -1,0 +1,718 @@
+/***********************************
+-------- HTML5----------------------
+***********************************/
+section, header, footer {
+	display:block;
+}
+
+/***********************************
+-------- GENERAL -------------------
+***********************************/
+
+#primaryContent {
+	background-color: #fff;
+	background-image:url(../img/Background/black-lines.jpg);
+	background-repeat:repeat;
+}
+@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+  #primaryContent {
+    background-image: url(../img/Background/black-lines@2x.jpg);
+    background-size: 125px 125px;
+  }
+}
+
+a {
+	text-decoration:none;
+	color: black;
+}
+
+a:hover {
+	text-decoration:underline;
+}
+
+p {
+	font-size:14px;
+	line-height:20px;
+	font: Arial, Helvetica, sans-serif;
+	color: #fff;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:normal;
+}
+
+h3{
+	color:#fff;
+}
+
+h2{
+	color:#95bf00;
+	font-weight:bold;
+	text-shadow: 0 2px 0 black;
+	font-size:24px;
+	line-height:24px;
+}
+
+ul {
+	overflow:hidden;
+	
+}
+
+li {
+	margin-left: 0;
+	list-style:none;
+	
+}
+
+.rounded {
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+.container_12 {
+	padding-left: 5px;
+	padding-right: 5px;
+	position:relative;
+}
+
+/***********************************
+-------- HEADER -------------------
+***********************************/
+#header-wrapper{
+	background-color:#fff;
+	background-image: url(../img/bg.jpg);
+	background-repeat:repeat-x;
+}
+
+@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+  #header-wrapper {
+    background-image: url(../img/bg@2x.jpg);
+    background-size: 125px 230px;
+  }
+}
+
+header {
+	padding-top:20px;
+	overflow:hidden;
+	color:white;
+	*color:white;
+}
+
+	header #leftHead{	
+		text-align:left;
+	}
+	
+	header #rightHead{
+		text-align:right;
+	}	header #rightHead h4{
+		padding-right:30px;	
+	}
+	
+h1.logo{
+	background-image: url(../img/logo.png);
+	background-repeat:no-repeat;
+	display: block;
+	width: 250px;
+	height: 43px;
+	font: 0/0 a;
+	text-shadow: none;
+	color: 
+	transparent;
+	border: none;	
+}
+
+@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+  h1.logo {
+    background-image: url(../img/logo@2x.png);
+    background-size: 250px 43px;
+  }
+}
+
+	
+/***********************************
+-------- BANNER WRAP ---------------
+***********************************/
+#banner-wrap {
+	background:#171717 repeat-x;	
+	height:350px;
+	overflow:hidden;
+}
+
+.featured h2{
+	padding-top:25px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	font-size:30px;
+	color:#95bf00;
+	text-shadow:none;
+}
+.featuredInfo h3{
+	font:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	font-size:18px;	
+	color:white;
+	padding-left:10px;
+}
+
+.featuredInfo p{
+	font:Arial, Helvetica, sans-serif;	
+	color:white;
+	padding-left:10px;
+	font-size:16px;
+	line-height:24px;
+}
+
+/***********************************
+---------- MAIN --------------------
+***********************************/
+
+#quote {
+	padding-top: 20px;
+}
+
+#quote h1{
+	font: Arial, Helvetica, sans-serif;
+	font-size:42px;
+	text-align:center;
+	color:#fff;
+}
+
+#cta h1{
+	font: Arial, Helvetica, sans-serif;
+	font-size:38px;
+	font-weight:bold;
+	color:#95bf00;
+	text-transform:uppercase;
+	text-shadow:0 2px 0 #000;
+}
+
+/*********** THE SIGN UP FORM *******************/
+#signup{
+	background:white;
+	height:425px;	
+	width:437px;
+	margin-top:-100px;
+	border:2px solid #666;
+	margin-bottom:20px;
+}
+	
+	#signup h3 {
+		background-color:#fff;
+		background-image: url(../img/signupBG.png);
+		background-repeat:no-repeat;
+		height:133px;
+		color:white;
+		font:Arial, Helvetica, sans-serif;
+		font-weight:bold;
+		font-size:34px;
+		line-height:98px;
+		text-align:center;
+		text-shadow:0 2px 0 #000;
+	}
+	@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+		#signup h3 {
+		background-image: url(../img/signupBG@2x.png);
+		background-size: 460px 133px;
+	  }
+	}
+	
+	#signup input{
+		background:#FFF;
+		border: solid #666 1px;
+		padding:10px;
+		margin : 0px 32px 15px;
+		width:350px;
+		height:25px;
+		text-align:left;
+		cursor:pointer;
+		color:#666;
+		font-size:16px;	
+	}
+	
+	#signup button{
+		background-color:#95bf00;
+		background-image: url(../img/button.png);
+		background-repeat: repeat-x;
+		border:solid 1px #690;
+		padding: 10px 40px;
+		margin-top: 10px;
+		margin-left: 90px;
+		border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		cursor:pointer;
+		font-weight:bold;
+		font-size:24px;
+		color:white;
+		text-shadow:0 1px 0 #000;
+		height:50px;
+	}
+
+	@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+		#signup button {
+		background-image:url(../img/button@2x.png);	
+		background-size: 14px 49px;
+	  }
+	}
+	
+	#signup input:hover, input:focus{
+		-webkit-box-shadow: 0 0 5px #061b20;
+		-moz-box-shadow: 0 0 5px #061b20;
+		box-shadow: 0 0 5px #061b20;
+	}
+	
+	#signup input.error{
+		color:red;	
+	}
+	
+	#signup button:hover, button:focus{
+		-webkit-box-shadow: 0 0 2px #061b20;
+		-moz-box-shadow: 0 0 2px #061b20;
+		box-shadow: 0 0 2px #061b20;
+		background-color: #95bf00;
+		background-image:  url(../img/button-hover.png);
+		background-repeat: repeat-x;
+	}
+	
+	@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+		#signup button:hover, button:focus {
+		background-image:url(../img/button-hover@2x.png);
+		background-size: 21px 51px;
+	  }
+	}
+	
+	#signup button:active {
+		padding:13px 40px 7px;
+		-webkit-box-shadow: 0 0 2px #061b20;
+		-moz-box-shadow: 0 0 2px #061b20;
+		box-shadow: 0 0 2px #061b20;
+		background-color: #95bf00;
+		background-image: url(../img/button-focus.png);
+		background-repeat: repeat-x;
+	}
+	
+	@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+		#signup button:active {
+		background-image:url(../img/button-focus@2x.png);
+		background-size: 20px 49px;
+	  }
+	}
+	
+#specialty{
+	clear:both;	
+	padding-bottom: 25px;
+	padding-top: 35px;
+}
+
+#specialty section {
+	
+}
+#specialty h3 {
+	text-align:center;	
+}
+
+#specialty .icons {
+	height:100px;	
+}
+
+#specialty img{
+	background-image:url(../img/divide2.png);
+	background-repeat: no-repeat;
+	background-position:center;
+	padding:0px 80px;	
+}
+
+@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+		#specialty img{
+		background-image:url(../img/divide2@2x.png);
+		background-size: 333px 166px;
+	  }
+	}
+	
+#specialty p{
+	padding-top:15px;
+	text-align:left;	
+}
+/***********************************
+-------- GREY CONTENT --------------
+***********************************/
+
+#grey-wrap {
+	background-color: #666;
+	background-image: url(../img/greyBG.jpg);
+	background-repeat:repeat;
+	border-bottom:4px solid #e5e5e5;	
+	border-top:4px solid #e5e5e5;	
+}
+
+@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+		#grey-wrap{
+		background-image:url(../img/greyBG@2x.jpg);
+		background-size: 127px 127px;
+	  }
+	}
+	
+#greyContent {
+	overflow:hidden;	
+	padding-top: 20px;	
+}
+
+#greyContent h3{
+	margin-bottom:15px;	
+	color:#333;
+	text-shadow: #e7eaef 0 2px 0;
+}
+
+.leftSection section{
+	overflow:hidden;	
+}
+.leftSection section p{		
+	padding-bottom:20px;	
+	max-height:160px;
+	color:#666;
+	text-shadow: #fff 0 1px 0;
+}
+	.leftSection section span img{
+		float:left;
+		padding-right: 20px;	
+	}
+
+	.leftSection ul {
+		margin-bottom: 20px;
+	}
+	
+	.leftSection ul li {
+		list-style:inside;
+		list-style-image: url(../img/small_check.png);
+		color:#666;
+		font:Arial, Helvetica, sans-serif;
+		font-size:14px;
+		line-height:30px;
+		text-shadow: #fff 0 1px 0;
+	}
+	
+
+.rightSection {
+	padding-left:17px;	
+}
+.rightSection .recentWork{
+	height:400px;
+	width:auto;
+}
+.recentWork li{
+	left:0;
+	right:0 !important;
+	display:block;
+	overflow:hidden;
+	background:#f7f7f7;
+	border:	 solid 1px #a3b2b9;
+	line-height:150px;
+	float:left;
+	margin: 0 25px 20px 0px;
+	padding: 8px;
+	height:160px;
+	width:160px;
+}
+.recentWork li a{
+	display:block;
+}
+
+.recentWork li a img{
+	height:160px;
+	width:160px;
+}
+/***********************************
+-------- BOTTOM CONTENT ------------
+***********************************/
+.bottomContent {
+	overflow:hidden;
+	padding-top:20px;	
+}
+
+#testimonial {
+	background-color: #fff;
+	background-image: url(../img/leftTestimonialWrap.jpg);
+	background-repeat:no-repeat;
+	height:138px;
+	border: solid 4px #ccc;	
+	margin:0 60px;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	overflow:hidden;
+}
+
+@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+		#testimonial{
+		background-image:url(../img/leftTestimonialWrap@2x.jpg);
+		background-size: 59px 58px;
+	  }
+	}
+
+#testimonial p{
+	color:#666;	
+}
+
+.testimonialQuote {
+	padding-left:75px;
+	padding-top:20px;
+	padding-right:20px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:16px;
+	line-height:24px;
+	font-weight:bold;
+	font-style:italic;	
+	color:#666;
+	height:70px;
+}
+
+.testimonialName {
+	position: absolute;
+	height:20px;
+	top: 110px;
+	bottom:0px;
+}
+.testimonialName p{
+	float: right;
+	text-align:right;
+	padding-right:20px;	
+	font-weight:bold;
+	width: 700px;
+}
+
+.testimonialName span{
+	font-weight:normal;
+	font-style:italic;
+	padding-left:5px;	
+}
+
+#client {
+	padding-top:20px;	
+}
+
+#subscribtion{
+	padding-top:20px;
+	padding-bottom:20px;
+	height:50px;
+}
+
+#subscribtion h2{
+	font-size:30px;
+	line-height:40px;
+	text-align:center;
+}
+
+#subscribe{
+	display:inline;
+	right:0;
+}
+#subscribe input{
+	background:#FFF;
+	border: solid #666 1px;
+	padding:10px;
+	width:307px;
+	height:28px;
+	text-align:left;
+	cursor:pointer;
+	color:#666;
+	font-size:16px;	
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+	#subscribe input:hover, input:focus{
+		-webkit-box-shadow: 0 0 5px #061b20;
+		-moz-box-shadow: 0 0 5px #061b20;
+		box-shadow: 0 0 5px #061b20;
+	}
+
+#subscribe button{
+		background-color:#95bf00;
+		background-image: url(../img/button.png);
+		background-repeat: repeat;
+		border:solid 1px #690;
+		padding: 5px 13px;
+		width:auto;
+		border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		cursor:pointer;
+		font-weight:bold;
+		font-size:24px;
+		color:white;
+		text-shadow:0 1px 0 #000;
+		height:50px;
+	}
+@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+		#subscribe button{
+		background-image:url(../img/button@2x.png);
+		background-size: 14px 49px;
+	  }
+	}
+	
+	#subscribe button:hover, button:focus{
+		-webkit-box-shadow: 0 0 2px #061b20;
+		-moz-box-shadow: 0 0 2px #061b20;
+		box-shadow: 0 0 2px #061b20;
+		background-color:#95bf00;
+		background-image: url(../img/button-hover.png);
+		background-repeat: repeat-x;
+	}
+	@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+		#subscribe button:hover, button:focus {
+		background-image:url(../img/button-hover@2x.png);
+		background-size: 21px 51px;
+	  }
+	}
+	
+	#subscribe button:active {
+		padding:7px 13px 3px;
+		-webkit-box-shadow: 0 0 2px #061b20;
+		-moz-box-shadow: 0 0 2px #061b20;
+		box-shadow: 0 0 2px #061b20;
+		background-color:#95bf00;
+		background-image: url(../img/button-focus.png);
+		background-repeat:repeat-x;
+	}
+	@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+		#subscribe button:active {
+		background-image:url(../img/button-focus@2x.png);
+		background-size: 20px 49px;
+	  }
+	}
+/***********************************
+-------- FOOTER --------------------
+***********************************/
+#footer-wrap{
+	background-color:#000;
+	background-image:url(../img/footerBG.jpg);
+	background-repeat:repeat-x;
+	height:162px;
+}
+@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+		#footer-wrap {
+		background-image:url(../img/footerBG@2x.png);
+		background-size: 111px 162px;
+	  }
+	}
+
+#headSocial{
+	position:absolute;
+	top:25px;	
+	display: block;
+	overflow: hidden;
+}
+
+	#headSocial li{
+	display: block;
+	width: 32px;
+	height: 32px;
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	}
+	
+	#headSocial li a{
+	float:left;
+	display: block;
+	width: 32px;
+	height: 32px;
+	padding-top:10px;
+	opacity: .5;
+	}
+	
+	#headSocial li a:hover{
+	opacity:1;
+	}
+	
+h2.footerLogo{
+	background-image: url(../img/footerLogo.png);
+	background-repeat:no-repeat;
+	display: block;
+	width: 200px;
+	height: 35px;
+	font: 0/0 a;
+	text-shadow: none;
+	color: transparent;
+	border: none;	
+	float: right;
+}
+
+@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+  h2.footerLogo {
+    background-image: url(../img/footerLogo@2x.png);
+    background-size: 200px 35px;
+  }
+}
+
+h2.footerLogo{
+	background-image: url(../img/footerLogo.png);
+	background-repeat:no-repeat;
+	display: block;
+	width: 200px;
+	height: 35px;
+	font: 0/0 a;
+	text-shadow: none;
+	color: transparent;
+	border: none;	
+	float: right;
+}
+
+@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+  h2.footerLogo {
+    background-image: url(../img/footerLogo@2x.png);
+    background-size: 200px 35px;
+  }
+}
+
+#footerText{
+	padding-top:80px;	
+	left: 0px;
+	display: block;
+	overflow: hidden;
+}
+	#footerText p{
+		color:white;
+		font-family:Arial, Helvetica, sans-serif;
+		font-size:16px;
+		line-height:24px;
+	}
+	
+#rightFooter {
+	margin-top:35px;	
+	float:right;
+	padding-right:30px;
+}
+	#rightFooter img{
+		margin-right:0px;	
+		float:right;
+		
+	}
+	
+	#rightFooter p{
+		padding-top:12px;
+		color:white;
+		font-family:Arial, Helvetica, sans-serif;
+		font-size:16px;
+		line-height:24px;
+		text-align:right;
+		clear:both;
+	}
+ #to-top{
+		position: absolute;
+		right: 0px;
+		width: 33px;
+		height: 33px;
+		background-image: url(../img/to-top2.png);
+		background-repeat:no-repeat;
+		cursor: pointer;
+ }
+ 
+ @media all and (-webkit-min-device-pixel-ratio: 1.5) {
+		#footer-wrap {
+		background-image:url(../img/to-top2@2x.png);
+		background-size: 31px 24px;
+	  }
+	}

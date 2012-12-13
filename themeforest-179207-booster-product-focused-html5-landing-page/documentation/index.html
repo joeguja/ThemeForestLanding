@@ -1,0 +1,530 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <title>Booster Landing Page v1.0 Documentation</title>
+  <meta name="description" content="Booster, HTML5 product oriented landing page documentation by Web factory Ltd. Sold exclusively on ThemeForest.">
+  <meta name="lang" content="en">
+  <link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+  <link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+  <!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+  <link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+  <link href="assets/js/styles/shCore.css" rel="stylesheet" type="text/css">
+  <link href="assets/js/styles/shThemeDefault.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <div class="container">
+    <h3 class="center alt">&ldquo;Booster Landing Page&rdquo; Documentation by &ldquo;Web factory Ltd&rdquo; v1.3</h3>
+    
+    <hr>
+    
+    <h1 class="center">&ldquo;Booster Landing Page&rdquo;</h1>
+    
+    <div class="borderTop">
+      <div class="span-6 colborder info prepend-1">
+        <p class="prepend-top">
+          Created: 2011-12-11, revision 6<br />
+          By: Web factory Ltd<br />
+          Support: <a href="http://themeforest.net/user/webfactory">via themeForest</a>
+        </p>
+      </div><!-- end div .span-6 -->    
+  
+      <div class="span-12 last">
+        <p class="prepend-top append-0">Thank you very much for purchasing our landing page. If you have any questions that are beyond the scope of this help file, please feel free to email us via our <a href="http://themeforest.net/user/webfactory">profile page contact form</a>. Have a good one!</p>
+      </div>
+    </div><!-- end div .borderTop -->
+    
+    <hr>
+    
+    <h2 id="toc" class="alt">Table of Contents</h2>
+    <ol class="alpha">
+      <li><a href="#htmlStructure">HTML Structure</a></li>
+      <li><a href="#cssFiles">CSS Files and Colors Themes</a></li>
+      <li><a href="#javaScript">JavaScript</a></li>
+      <li><a href="#php">PHP</a></li>
+      <li><a href="#psdFiles">PSD Files</a></li>
+      <li><a href="#credits">Sources and Credits</a></li>
+    </ol>
+    
+    <hr>
+    
+    <h3 id="htmlStructure"><strong>A) HTML Structure</strong> - <a href="#toc">top</a></h3>
+    
+    <p>Template's layout is <strong>fixed</strong>, 960px wide with <strong>1 main center column</strong>. This landing page uses the <a href="http://html5boilerplate.com/">HTML5 Boilerplate</a>, <strong>HTML5</strong> and <strong>CSS3</strong>.</p>
+
+    <h4>HTML layout structure</h4>
+    
+    <div class="struct">
+      <strong>header</strong><br />
+      Site title and tagline. Can bi hidden with the button below it.
+    </div>
+    
+    <div class="struct">
+      <strong>section #tagline</strong><br />
+      Second, larger tagline.
+    </div>
+    
+    <div class="struct">
+      <strong>div #close-open-top</strong><br />
+      Button for hiding the header.
+    </div>
+    
+    <div class="struct">
+      <strong>section #product</strong><br />
+       Product container.
+       
+      <div class="struct">
+      <strong>article .product</strong><br />
+        Article tagline, description, action buttons and large image.
+        
+        <div class="struct">
+      <strong>div #thumbnail .gallery</strong><br />
+      PrettyPhoto thumbnail images.
+    </div>
+      </div>
+       
+    </div>
+    
+    <div class="struct">
+      <strong>aside</strong><br />
+      Product features container.
+      
+      
+      <div class="struct">
+      <strong>ul .features-list</strong><br />
+        List of product features (3) with big icons.
+      </div>
+      
+      <div class="struct">
+      <strong>div .contact-form</strong><br />
+        Working AJAX contact form.
+      </div>
+      
+      <div class="struct">
+      <strong>div .contact-info</strong><br />
+        List with iconized contact info.
+      </div>
+      
+      <div class="struct">
+      <strong>div .twitter-feed</strong><br />
+        Working AJAX Twitter feed.
+      </div>
+    </div>
+    
+    <div class="struct">
+      <strong>section #tabs-footer</strong><br />
+      Tabs area. If you want a true above fold layout delete this element.
+      
+      <div class="struct">
+      <strong>div .tab_container</strong><br />
+        Tabs container.
+        
+        <div class="struct">
+        <strong>div .tab_content #tabNB</strong><br />
+          First tab.
+        </div>
+        
+        <div class="struct">
+        <strong>div .tab_content #tabNB</strong><br />
+          Second tab.
+        </div>
+        
+        <div class="struct">
+        <strong>div .tab_content #tabNB</strong><br />
+          Third tab.
+        </div>
+      </div>
+    </div>
+    
+    <div class="struct">
+      <strong>footer</strong><br />
+      Classic, minimal footer with <i>copyright info</i>.
+    </div>
+ 
+    <br />
+    <h4>HTML structure</h4>
+    
+    <p>Booster's HTML code is properly commented with HTML comments. We believe this will significantly increase your productivity while you make changes to the template. We've marked the beginning and the end of all important elements so that you can easily modify or remove them without compromising the HTML's integrity and validity.<br>
+For production environments we recommend removing the HTML comments. If your HTML editor of choice can't remove them automatically you can easily clean your code using one of many free online tools such as <a href="http://infohound.net/tidy/">HTML Tidy Online</a>.<br><br></p>
+    
+        
+    <h4>HTML "how to" guide</h4>
+    
+    <p><strong>Modifying header and tagline</strong></p>
+    <p>Booster "logo" in header is written in plain text using Yanone Kaffeesatz font. If you don't have a custom image logo for your product you can just replace "booster" with your product name. Look for the code below on line #26.</p>
+    
+    <script type="syntaxhighlighter" class="brush: html">
+    <![CDATA[
+  <header>
+    <div class="inner-header">
+      <h1><a title="booster" href="/">PRODUCT NAME</a></h1>
+      <h2>PRODUCT TAGLINE</h2>
+    </div>
+  </header>
+     ]]>
+    </script>
+    <br>
+    
+    <p><strong>Making header hidden when page loads</strong></p>
+    <p>If you would like to have the page load withouth the header find the <i>header</i> tag around line #25 and change it to the code stated below. You'll still be able to toggle the header with the button below it.</p>
+    
+    <script type="syntaxhighlighter" class="brush: html">
+    <![CDATA[
+          <header style="display: none;">
+     ]]>
+    </script>
+    <br>
+    <p><strong>Adding or removing images from lightbox</strong></p>
+    <p>Images are located in "div #thumbnails .gallery". Each image has to be inside an &lt;a&gt; tag with rel attribute set to "prettyPhoto[gallery1]".<br>
+    If you want to keep the current layout thumbnail images should be 100x100px. Full size images have no size "limitations".<br>
+    Here's a code sample for 3 images:</p>
+      
+      <script type="syntaxhighlighter" class="brush: html">
+    <![CDATA[
+       <div class="gallery" id="thumbnails">
+        <a title="Image caption" rel="prettyPhoto[gallery1]" href="images/image-1.jpg">
+          <img alt="Image title" src="images/thumb-1.jpg">
+        </a>
+        <a title="Image caption" rel="prettyPhoto[gallery1]" href="images/image-2.jpg">
+          <img alt="Image title" src="images/thumb-2.jpg">
+        </a>
+        <a title="Image caption" rel="prettyPhoto[gallery1]" href="images/image-3.jpg">
+          <img alt="Image title" src="images/thumb-3.jpg">
+        </a>
+      </div>
+     ]]>
+    </script>
+    
+    <br>
+    <p><strong>Adding or removing tabs</strong></p>
+    <p>Tabs are located in "div #tab_container". In order to add/remove a tab first you define the tab's content in "div .tab-container". Each tab has it's own div with class "tab_content". Id has to be the same as href param later defined in "li a".</p>
+      
+      <script type="syntaxhighlighter" class="brush: html">
+    <![CDATA[
+      <div class="tab_container">
+        <div class="tab_content" id="tab1">
+          Tab #1 content.
+        </div>
+        <div class="tab_content" id="tab2">
+          Tab #2 content.
+        </div>
+        <div class="tab_content" id="tab3">
+          Tab #3 content.
+        </div>
+      </div>
+     ]]>
+    </script>
+    
+    <p>After that you need to edit "ul .tabs". Each tab link is a "li" with "a" inside it. Also, please mind the href property. It has to be in "#tabNB" format.</p>
+      
+      <script type="syntaxhighlighter" class="brush: html">
+    <![CDATA[
+    <ul id="bottom-accordian" class="tabs">
+      <li class="accordian-nav-item"><a title="tab1" href="#tab1">tab1</a></li>
+      <li class="accordian-nav-item"><a title="tab2" href="#tab2">tab2</a></li>
+      <li class="accordian-nav-item"><a title="tab3" href="#tab3">tab3</a></li>
+    </ul>
+      ]]>
+    </script>
+      
+    <hr>
+
+    <h3 id="cssFiles"><strong>B) CSS Files and Colors Themes</strong> - <a href="#toc">top</a></h3>
+      
+    <h4>List of included color themes:</h4>
+    <ul>
+      <li>green</li>
+      <li>orange</li>
+      <li>red</li>
+      <li>color picker</li>
+    </ul>
+      
+    <h4>Theme files</h4>
+    <p>All themes have the identical HTML file. They differ only in one CSS file -  style.css.</p>
+
+    <p>Each of 3 provided themes (+ special color-picker one) have their own folders and image/css subfolders.<br>
+    Each theme uses one main CSS file - style.css and 3 helper files.
+    
+    <ul>
+      <li><b>ie7.css</b> - IE7 fixes</li>
+      <li><b>prettyPhoto.css</b> - prettyPhoto lightbox styles; uninclude this file if you're not using prettyPhoto</li>
+      <li><b>style.css</b> - main style file; the only one you should change</li>
+      <li><b>tipsy.css</b> - tipsy tooltips styles; uninclude this file if you're not using tipsy</li>
+    </ul>
+    
+    <p>The main file is separated into following sections for easier editing:</p>  
+
+    <script type="syntaxhighlighter" class="brush: css">
+      <![CDATA[  
+/* 
+ * HTML5 Boilerplate - reset
+ */
+
+/* 
+ * HTML5 Boilerplate - minimal base styles 
+ */
+
+/* 
+ * Non-semantic helper classes 
+ */
+ 
+/*
+ *  CSS3 Media queries
+ */
+ 
+/*
+ *  Custom Booster styles - only ones you should edit
+ */
+
+/*
+ *  Slides
+ */
+      ]]>
+    </script>
+    
+    <p>If you would like to edit a specific section of the site, simply find the appropriate label in the CSS file, and then scroll down until you find the style that needs editing.</p>
+
+    <p><b>Creating a custom color theme</b><br />
+    Open the color-picker theme in your browser to make the color selecting process easier; or you can use our <a href="http://booster.webfactoryltd.com/color-picker/" target="_blank">demo</a> - it's much more convinient.<br>
+    Pick a color you like by utilizng the color-picker on the left. Header, links, buttons and some other elements will change as you pick various colors. Once you're satisfied copy the code you see below the colopicker, in the textarea. Open style.css and paste the code on the very end of the file.</p>
+    
+<p>Sample of generated custom theme code:</p>
+   
+       <script type="syntaxhighlighter" class="brush: css">
+      <![CDATA[
+header { background-color: #0f2e96; }
+a.purchase-button { background-color: #0f2e96; }
+a.contact-button { background-color: #0f2e96; }
+      ]]>
+    </script> 
+    
+    <p><br /><b>Changing fonts</b><br />
+    Fonts for global HTML elements are defined on the beginning of custom styles section (lines 199). You can easily change the font family by changing the "font-family" property in each element's class. Font-size and line-height can also be easily changed. Please bare in mind that changing those properties will significantly change the design and overall appearance of the site.<br>
+    Besides standard HTML fonts Booster also uses Google hosted Yanone Kaffeesatz font in following variations: extralight, light, regular, bold as well as the Droid Serif in regular, italic and bold variations.
+    </p>
+    
+    <br>
+    <hr>
+
+    <h3 id="javascript"><strong>C) JavaScript</strong> - <a href="#toc">top</a></h3>
+    
+    <p>All Booster's JS code is jQuery based. Here's the list of all JS files. They're located in the JS folder.</p>
+    
+    <ul>
+      <li><strong>jquery-1.5.min.js</strong> - main jQuery library, has to be included on all pages</li>
+      <li><strong>modernizr-1.6.min.js</strong> - HTML5 compatibility fix for older browsers</li>
+      <li><strong>jquery.form.2.64.js</strong> - form and AJAX handling for newsletter subscription</li>
+      <li><strong>jquery.validate.js</strong> - form validation</li>
+      <li><strong>jquery.prettyPhoto.js</strong> - prettyPhoto lightbox script</li>
+      <li><strong>jquery.tipsy.js</strong> - tipsy tooltips script</li>
+      <li><strong>twitter.min.js</strong> - twitter script</li>
+      <li><strong>common.js</strong> - misc code, init and config for all scripts</li>
+    </ul>
+    
+    <p id="js-newsletter"><br><strong>Configuring the newsletter subscription script</strong><br>
+    If you're having problems with the newsletter subscription script please read the <a href="#php-newsletter">5 seconds PHP setup</a> first. There's no need to change anything in JS unless you want to change the response script gives to the user.<br>
+    Open "common.js" file which you'll find in the JS directory. The code you need starts on line 80. You can change the single-quoted text in each line that starts with "alert". For instance if you change the text on line 96 ("Thank you for subscribing to our newsletter! We will not abuse your address.") you'll change the "thank you" text users see after a successful subscription.
+    </p>
+    
+    <p><br><strong>Configuring Tipsy tooltips</strong><br>
+    You'll find the tipsy init scrips online #45 in common.js. There are only 3 variables to configure:
+    </p>
+    <ul>
+      <li>delayIn - time it takes the tooltip to appear after you mouse-in</li>
+      <li>delaOut - time it takes the tooltip to disappear after you mouse-out</li>
+      <li>gravity - tooltips position, relative to parent element; options: n, s, e, w</li>
+    </ul>
+    
+    <p><br><strong>Configuring prettyPhoto lightbox</strong><br>
+    You'll find the prettyPhoto init scrips online #41 in common.js. All variables are self explanatory. The script targets all images with rel="prettyPhoto" that are inside ".gallery" div.<br>
+    Configuration variables that you'll want to change are:</p>
+    <ul>
+    <li>animation_speed - fast/slow/normal</li>
+<li>slideshow - false OR interval time in ms</li>
+<li>autoplay_slideshow - true/false</li>
+<li>opacity - Value between 0 and 1</li>
+<li>show_title - true/false</li>
+<li>allow_resize: - Resize the photos bigger than viewport. true/false</li>
+<li>default_width - 500; change if necessary</li>
+<li>default_height - 344; change if necessary</li>
+<li>theme - light_rounded, dark_rounded, light_square, dark_square or facebook</li>
+<li>autoplay - Automatically start videos: True/False</li>
+<li>modal - If set to true, only the close button will close the window</li>
+<li>overlay_gallery - If set to true, a gallery will overlay the fullscreen image on mouse over</li>
+<li>keyboard_shortcuts - Set to false if you open forms inside prettyPhoto</li>
+    </ul>
+    
+    <p>Read <a href="http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/documentation/" target="_blank">PrettyPhoto documentation</a> for more detailed options info.
+    </p>
+    
+    
+     <p id="js-contact"><br><strong>Configuring the "drop us a line" form contact script</strong><br>
+     If you're having problems with the contact form please read the <a href="#php-contact">5 seconds PHP setup</a> first. There's no need to change anything in the JS/HTML unless you want to add/remove form elements.<br>
+    Validation and AJAX form handling is defined and configured in "common.js". We've used one of the best validation scripts available - <a href="http://docs.jquery.com/Plugins/Validation">jQuery validation plugin</a> which can be easily configured to validate any form. Lines 66-73 in "common.js" (rules) define the rules for input fields. Most of them are only "required" while the email field also needs to be a valid email address. Lines 102-109 (messages) define the error messages user gets when the form is not properly filled.<br>
+    Once the form is submitted via AJAX response alerts are configured in the "contactFormResponse()" function. You'll probably want to change the message for successful sending which is defined at line 112.</p>
+    
+    
+        <p><br><strong>Configuring the Twitter script</strong><br>
+    Open "common.js" file which you'll find in the JS directory. On line 53 there's a piece of code that contains "id: 'envatowebdesign',". Simply replace "envatowebdesing" with the Twitter username who's tweets you want to show and you're done! Don't forget the single quotes around the username.<br>
+    If you have some time you can further customize the script. Variable "count" defines how many tweets you want to show in your template. "enableLinks" enables/disables links that are a part of the tweet itself. "ignoreReplies" defines if you (don't) want to skip tweets starting with @. And finally "template" defines how each tweet is outputted to your template.<br>
+    For further details please see <a href="http://code.google.com/p/twitterjs/">code.google.com/p/twitterjs/</a> and <a href="http://remysharp.com/2007/05/18/add-twitter-to-your-blog-step-by-step/">remysharp.com/2007/05/18/add-twitter-to-your-blog-step-by-step/</a>.
+    </p>
+    
+    <script type="syntaxhighlighter" class="brush: js">
+      <![CDATA[  
+  // Twitter script config
+  getTwitters('tweet', {id: 'envatowebdesign',
+                        count: 3,
+                        enableLinks: true,
+                        ignoreReplies: true,
+                        template: '"%text%" <a class="meta" href="http://twitter.com/%user_screen_name%/statuses/%id%/">%time%</a>'});
+    ]]>
+    </script>
+    
+    <hr>
+    
+    <hr>
+    
+    <h3 id="php"><strong>D) PHP Files</strong> - <a href="#toc">top</a></h3>
+    
+    <h4 id="php-contact">"Drop us a line" contact form</h4>
+    
+    <p>Booster includes a versatile AJAX driven PHP script that powers the "drop us a line" form.</p>
+    
+    <p id="php-5sec"><strong>5 seconds setup</strong><br />
+    Locate the file "contact-us.php" which you'll find in the root directory of your chosen color theme. On line 9 there's a variable called $myEmail fill it with your email address, ie "$myEmail = 'john@gmail.com';". You're done!<br />Test the script by entering some data into the contact form and you should receve an email momentarily.</p>
+    
+    <p><strong>5 minutes setup</strong><br />
+    Besides the email address you can also configure the email's subject. You'll find the variable "$emailSubject" online 13 of "contact-us.php" script.<br />
+    If you add or remove some form fields there is no need to change anything in the script. It will email you all the fields regardless of their number.<br />
+    All other parameters of this script are configured in JavaScript. You can read more about it in the <a href="#js-contact">JavaScript</a> section of this manual.</p>
+    
+    <h4 id="php-newsletter-mc">Mailchimp newsletter signup script</h4>
+    
+    <p>In order to activate the MailChimp newsletter script you have to change the "action" property of the newsletter form from "newsletter-subscribe.php" to "newsletter-subscribe-mailchimp.php".</p>
+    <script type="syntaxhighlighter" class="brush: html">
+      <![CDATA[  
+  <form action="newsletter-subscribe-mailchimp.php" id="newsletterform" method="post">
+    ]]>
+    </script>
+    
+    <p>Next step is to configure the script itself. Open "newsletter-subscribe-mailchimp.php". Only change lines #9 and #11. On line #9 enter your MailChimp API key (don't forget the quotes). On line #11 enter the list name you want people to subscribe to, again - don't forget the quotes.
+    </p>
+    
+    <script type="syntaxhighlighter" class="brush: php">
+      <![CDATA[  
+  // your MailChimp API Key
+  define('MAILCHIMP_API_KEY', 'MAILCHIMP-API');
+  // name of the list people are subscribing to
+  define('MAILCHIMP_LIST_NAME', 'LIST-NAME');
+    ]]>
+    </script>
+    
+    <h4 id="php-newsletter">Newsletter signup script</h4>
+   
+    <p>Booster includes a simple AJAX driven PHP script that enables you to collect email addresses from your visitors who whish to subscribe to your newsletter.
+    </p>
+     
+    <p><strong>Script requirements</strong><br />
+    PHP 5.2 or an older version of PHP with JSON extension. Privileges to modify write-access (chmod) on one <i>txt</i> file. Ability to send emails via PHP's "mail()" function.<br />
+    These requirements are met by default in almost all hosting environments that support PHP.
+    </p>
+    
+   
+    
+    <p><strong>5 seconds setup</strong><br />
+    Locate the file "subscribed-emails.txt" which you'll find in the root www directory of template. Chmod it to 777 so that PHP can write the emails in it. You're done!<br /> Test the script by entering an email in "subscribe" box on your site, hit enter and it should say "Thank you for subscribing".
+    </p>
+    
+    <p><strong>5 minutes setup</strong><br />
+    All PHP code is located in a single file "newsletter-subscribe.php". There are 2 variables that you can configure. The first one, "$emailsFile" (line 10) defines the path to TXT file in which PHP stores the emails and checks for duplicates. PHP has to have read and write access to this file so be sure to chmod it to 777 or a similar value that will give PHP the noted access rights. Second variable "$myEmail" (line 15) is an optional parameter which enables you to receive an email each time someone subscribes toyour newsletter. Set this variable to your email address, ie: "myemail@gmail.com". If you don't want to use this feature just leave it blank.<br />
+    All other parameters of this script are configured in JavaScript. You can read morea bout it in the <a href="#js-newsletter">JavaScript</a> section of this manual.
+    </p>
+    
+    <hr>
+    
+    <h3 id="psdFiles"><strong>E) PSD Files</strong> - <a href="#toc">top</a></h3>
+    
+    <p>Booster comes with full PSD support.<br>
+    You'll find the complete template with all graphical elements in following files:</p>
+    <ul>
+      <li><b>index.psd</b> - complete template</li>
+      <li><b>lightbox-image.psd</b> - images used in demo lightbox examples</li>
+      <li><b>tablet.psd</b> - tablet used for product image</li>
+    </ul>
+      
+    <hr>
+    
+    <h3 id="credits"><strong>F) Sources and Credits</strong> - <a href="#toc">top</a></h3>
+    
+    <p>Booster uses the following icons, JavaScript libraries and other assets.
+    
+    <ul>
+     <li><strong>HTML5 Boilerplate template</strong><br>
+    http://html5boilerplate.com/ (generated on http://initializr.com/)<br>
+    Licensed under GPL</li>
+    
+    <li><strong>Buddycons - 126 vector icons</strong><br>
+    http://www.premiumpixels.com/buddycons-126-free-vector-based-social-media-icons/<br>
+    Free for personal and commercial use, no attribution necessary</li>
+    
+    <li><b>NIXUS Icon Pack: 60 Beautiful Premium Icons</b><br />
+    http://www.tutorial9.net/downloads/nixus-icon-pack-60-beautiful-premium-icons-free/<br>
+    (c) NIXUS
+    This Free Icon Pack is for use in your personal and commercial projects.
+    </li>
+ 
+    <li><strong>jQuery</strong><br>http://www.jquery.com<br>Licenced under MIT and GNU GPL version 2</li>
+ 
+    <li><strong>jQuery Form Plugin</strong><br>(c) malsup.com<br>Dual licensed under the MIT and GPL licenses</li>  
+  
+    <li><b>Tablet PC, blank screen PSD template</b><br>
+    (c) 2009-2011 psdGraphics.com<br>
+    http://www.psdgraphics.com/psd/tablet-pc-blank-screen-psd-template/<br>
+    Permitted to resell as a part of project</li>
+    
+    <li><b>GLYPHICONS</b><br>
+    Copyright 2010 - 2011 Jan Kovařík<br>
+    http://glyphicons.com/<br>
+    Creative Commons licence
+    </li>
+    
+    <li><strong>jQuery tipsy</strong><br>
+    Copyright Jason Fram<br>
+    http://plugins.jquery.com/project/tipsy<br>
+    MIT license</li>
+    
+    <li><strong>prettyPhoto</strong><br>
+ Author Stephane Caron<br>
+ http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/<br>
+ Licensed under Creative Commons Attribution 2.5</li>
+    
+    <li><b>Color picker</b> (only for color-picker version)<br>
+      Stefan Petre<br>www.eyecon.ro<br>Dual licensed under the MIT and GPL licenses</li>
+      
+      <li><strong>jQuery validation plug-in</strong><br>
+    Copyright (c) Jörn Zaefferer<br>
+    http://bassistance.de/jquery-plugins/jquery-plugin-validation/
+ Dual licensed under the MIT and GPL licenses</li>
+
+    </ul>
+     
+    <hr>
+    <p>Once again, <strong>thank you</strong> so much for purchasing this landing page. As stated at the beginning, we'd be glad to help you if you have any questions relating to this theme. We'll do our best to assist. If you have a more general question relating to the themes on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p> 
+    
+    <p class="append-bottom alt large"><strong>Web factory Ltd.</strong></p>
+    <p><a href="#toc">Go To Table of Contents</a></p>
+
+  </div><!-- end div .container -->
+  <script type="text/javascript" src="assets/js/jquery-1.4.1.min.js"></script>
+  <script type="text/javascript" src="assets/js/scripts/shCore.js"></script>
+  <script type="text/javascript" src="assets/js/scripts/shAutoloader.js"></script>
+  <script type="text/javascript" src="assets/js/scripts/shBrushXml.js"></script>
+  <script type="text/javascript" src="assets/js/scripts/shBrushJScript.js"></script>
+  <script type="text/javascript" src="assets/js/scripts/shBrushCss.js"></script>
+  <script type="text/javascript" src="assets/js/scripts/shBrushPhp.js"></script>
+  <script type="text/javascript">
+       SyntaxHighlighter.all()
+  </script>
+</body>
+</html>
